@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/quiz_bg"
+    tools:context=".QuizActivity">
+
+
+    <ImageView
+        android:id="@+id/StateOfMatter"
+        android:layout_width="388dp"
+        android:layout_height="261dp"
+        android:layout_alignParentEnd="true"
+        app:srcCompat="@drawable/states3" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/dark_purple"
+        android:fontFamily="sans-serif-condensed"
+        android:text="How would you describe yourself?"
+        android:layout_below="@+id/StateOfMatter"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:backgroundTint="#fe6c9e"
+        android:text="A free spirit"
+        android:layout_marginTop="80dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#fe6c9e"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Go with the flow"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#fe6c9e"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Sturdy and grounded"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/button2"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Next"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button3"
+        android:onClick="goToNext"/>
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffe3f1"
+        app:srcCompat="@android:drawable/ic_media_rew"
+        android:contentDescription="back button"
+        android:onClick="goToHome"/>
+
+
+</RelativeLayout>

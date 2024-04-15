@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/quiz_bg"
+    tools:context=".SelectElement">
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#ffe3f1"
+        app:srcCompat="@android:drawable/ic_media_rew"
+        android:contentDescription="back button"
+        android:onClick="goToHome"/>
+    <TextView
+        android:id="@+id/selectHeading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="@color/dark_purple"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_marginTop="100dp"
+        android:text="Select your element"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/hydrogen1"
+        android:layout_below="@id/selectHeading"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:contentDescription="hydrogen"
+        android:onClick="goToHydrogen"/>
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/nitrogen"
+        android:layout_below="@id/selectHeading"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="230dp"
+        android:contentDescription="nitrogen"
+        android:onClick="goToNitrogen"/>
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/oxygen"
+        android:layout_below="@id/selectHeading"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="30dp"
+        android:contentDescription="nitrogen"
+        android:onClick="goToOxygen"/>
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/fluorine"
+        android:layout_below="@id/selectHeading"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="170dp"
+        android:contentDescription="nitrogen"
+        android:onClick="goToFlourine"/>
+
+    <ImageButton
+        android:id="@+id/imageButton6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/chlorine"
+        android:layout_below="@id/selectHeading"
+        android:layout_marginTop="180dp"
+        android:layout_marginStart="300dp"
+        android:contentDescription="nitrogen"
+        android:onClick="goToChlorine"/>
+
+    <ImageButton
+        android:id="@+id/imageButton7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/bromine"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="50dp"
+        android:contentDescription="nitrogen"
+        android:onClick="goToBromine"/>
+
+    <ImageButton
+        android:id="@+id/imageButton8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/iodine"
+        android:layout_marginTop="450dp"
+        android:layout_marginStart="230dp"
+        android:contentDescription="nitrogen"
+        android:onClick="goToIodine"/>
+
+</RelativeLayout>
